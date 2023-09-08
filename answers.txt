@@ -1,0 +1,11 @@
+What is the difference between a merge and a rebase?
+
+In the case of a merge, we are adding a point at the end of our branch's history where the commit histories of
+it and a separate branch are joining together (through a merge commit). This is simple and does not require tampering
+with the branch history.
+
+However for a rebase, we are moving the point that represents when our branch initially diverged from its parent branch 
+to the very end of the parent's history. In this way, instead of the commit history of the parent branch showing that our 
+separate branch broke off somewhere in the past, it appears as if it only just diverged from it. This can lead to a more
+neat branch history (linear instead of paths with multiple parents), but you can lose context (such as when previous changes
+were made to the branch).
